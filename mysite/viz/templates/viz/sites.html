@@ -1,0 +1,39 @@
+{% extends "viz/index.html" %}
+{% block nav %}{% endblock %}
+{% block content %}
+    <h1 id="subTitle">Superfund Sites</h1>
+
+    {% if site_list %}
+    <ul>
+
+      {% for site in site_list %}
+        {% if forloop.first %}<div class="row">{% endif %}
+        
+          {% if site.tract == 0 %}
+          
+          {% else %}
+          <div class="col-sm-6" id="siteCard">
+            <div class="card" id="siteCardInside">
+              <div class="card-body">
+                <h5 class="card-title">{{site.formatted_address}}</h5>
+                <p class="card-text">EPA ID: {{site.epa_id}}</p>
+                <p class="card-text">This site is in Tract {{site.tract_id}} has an average income of ${{site.income}}</p>
+                {% if site.npl_status == "" %}
+                {% else %}
+                <p class="card-text">National Priorities List Status: {{site.npl_status}}</p>
+                {% endif %}
+                <a href="{% url 'viz:tracts_site' site.tract %}" class="btn btn-primary">See Other Sites in this Tract {{site.tract}}</a>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+
+        {% if forloop.counter|divisibleby:2 %}</div><div class="row">{% endif %}
+        {% if forloop.last %}</div>{% endif %}
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no sites.</p>
+    {% endif %}       
+{% endblock %}

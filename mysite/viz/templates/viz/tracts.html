@@ -1,0 +1,43 @@
+{% extends "viz/index.html" %}
+
+{% block nav %}{% endblock %}
+
+{% block content %}
+    <h1 id="subTitle">Census Tracts</h1>
+
+    {% if tract_list %}
+    <ul>
+
+      {% for tract in tract_list %}
+        {% if forloop.first %}<div class="row">{% endif %}
+        
+          {% if tract.tract_id == 0 %}
+          <div class="col-sm-6" id="siteCard">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Census Tracts with an income of $0 are bodies of water</h5>
+                <a href="#" class="btn btn-primary" style="visibility: hidden;"></a>
+              </div>
+            </div>
+          </div>
+          {% else %}
+          <div class="col-sm-6" id="siteCard">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Census Tract ID {{tract.tract_id}}</h5>
+                <p class="card-text">This tract has an average income of ${{tract.income}}</p>
+                <a href="{% url 'viz:tracts_site' tract.tract_id %}" class="btn btn-primary">See Sites in Tract {{tract.tract_id}}</a>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+
+        {% if forloop.counter|divisibleby:2 %}</div><div class="row">{% endif %}
+        {% if forloop.last %}</div>{% endif %}
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no sites.</p>
+    {% endif %}       
+{% endblock %}

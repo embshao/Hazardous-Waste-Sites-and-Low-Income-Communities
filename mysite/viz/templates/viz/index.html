@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      
+      <title>{% block title %}Superfund Sites and Low-Income Communities{% endblock %}</title>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- bulma css-->
+      <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!-- Add additional CSS in static file -->
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'viz/style.css' %}">
+      {% block header %}
+      {% endblock %}
+   </head>
+   <body>
+    <style type="text/css">
+  #map {
+        height: 400px;
+        width: 100%;
+       }
+
+  svg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #mainTitle{
+    color: white;
+    font-size: 16px;
+  }
+
+  #subTitle{
+    margin-top: 30px;
+  }
+
+  #content{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+  }
+
+  .viz{
+    margin-top: 20px;
+  }
+
+  #vizBtn{
+    margin-top: 50px;
+    margin-left: 280px;
+  }
+
+  #siteCard{
+    margin-top: 30px;
+  }
+
+  #siteCardInside{
+    height: 270px;
+  }
+
+  a:link{
+    color: white;
+  }
+
+  a:visited {
+      color: white;
+  }
+
+  a:hover {
+      color: gray;
+      text-decoration: none;
+  }
+
+  .btn-primary{
+    background-color: gray;
+    border: gray;
+  }
+
+  .setloc-map {
+    max-width: 100%;
+    height: 400px;
+    margin-top: 1em;
+    border: 1px solid #eee;
+}
+</style>
+      <div class="pos-f-t">
+         <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+               <h4 class="text-white"><a href="{% url 'viz:index' %}">Home</a></h4>
+               <h4 class="text-white"><a href="{% url 'viz:tracts' %}">Census Tracts</a></h4>
+               <h4 class="text-white"><a href="{% url 'viz:sites' %}">Superfund Sites</a></h4>
+            </div>
+         </div>
+         <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <h1 id="mainTitle">Spatial Relationship between Hazardous Waste Sites and Low-Income Communities</h1>
+         </nav>
+      </div>
+
+      <div id="content">
+      {% block nav %}
+        <div id="vizBtn" class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary"><a href="{% url 'viz:index' %}">Map</a></button>
+        <button type="button" class="btn btn-secondary"><a href="{% url 'viz:pie' %}">Pie Chart</a></button>
+        <button type="button" class="btn btn-secondary"><a href="{% url 'viz:bar' %}">Bar Graph</a></button>
+      </div>
+      {% endblock %}
+        {% block content %}
+			<div id="map" class="viz"></div>
+      <script>
+      function initMap() {
+        var uluru = {lat: 35.7596, lng: -79.0193};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: uluru
+        });
+        var ctaLayer = new google.maps.KmlLayer({
+          url: 'tract.kml',
+          map: map
+        });
+        {% for site in site_list %}
+
+          var content = "<p>Site {{site.epa_id}} in Census Tract {{site.tract}}</p><p>{{site.formatted_address}}</p><p>$ {{site.income}} average household income</p><p>NPL Status: {{site.npl_status}}</p>";
+
+          var infowindow = new google.maps.InfoWindow({
+            content: content
+          });
+
+          var point = {lat: {{site.lat}}, lng: {{site.lon}}};
+
+          var marker = new google.maps.Marker({
+            position: point,
+            map: map,
+          });
+
+          google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+              return function() {
+                  infowindow.setContent(content);
+                  infowindow.open(map,marker);
+              };
+          })(marker,content,infowindow));
+        {% endfor %}
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXkZVr8V7-B8Kg3uEvHoYrLPhv6VfXAig&callback=initMap">
+    </script>
+
+        {% endblock %}
+      </div>
+
+
+   </body>
+
+</html>
+

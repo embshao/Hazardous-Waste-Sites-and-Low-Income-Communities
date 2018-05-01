@@ -1,0 +1,674 @@
+[
+  {
+    "model": "viz.sitelocation",
+    "pk": 400885,
+    "fields": {
+        "tract": 37157040200,
+        "formatted_address": "864 S Edgewood Rd, Eden, NC 27288, USA",
+        "city": "EDEN",
+        "state": "NC",
+        "zipcode": 27288,
+        "npl_status": "Removal Only Site (No Site Assessment Work Needed)",
+        "lon": -79.7205149,
+        "lat": 36.486649,
+        "address": "864 S. EDGEWOOD ROAD",
+        "income":43395
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402650,
+    "fields": {
+        "tract": 37135011601,
+        "formatted_address": "Venable Hall, Chapel Hill, NC 27514, USA",
+        "city": "CHAPEL HILL",
+        "state": "NC",
+        "zipcode": 27514,
+        "npl_status": "Other Cleanup Activity: State-Lead Cleanup",
+        "lon": -79.0513037,
+        "lat": 35.9096217,
+        "address": "B-5 VENABLE HALL",
+        "income":23537
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402680,
+    "fields": {
+        "tract": 37057061000,
+        "formatted_address": "200 Mason Way, Thomasville, NC 27360, USA",
+        "city": "THOMASVILLE",
+        "state": "NC",
+        "zipcode": 27360,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": -80.061563,
+        "lat": 35.882451,
+        "address": "200 MASON WAY",
+        "income":49032
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402681,
+    "fields": {
+        "tract": 37125951000,
+        "formatted_address": "Yadkin Rd, Southern Pines, NC 28387, USA",
+        "city": "SOUTHERN PINES",
+        "state": "NC",
+        "zipcode": 28387,
+        "npl_status": "Formal State Deferral",
+        "lon": -79.3716706,
+        "lat": 35.1858807,
+        "address": "YADKIN RD",
+        "income":31760
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402687,
+    "fields": {
+        "tract": 37045951601,
+        "formatted_address": "NC-198, Grover, NC 28073, USA",
+        "city": "SHELBY",
+        "state": "NC",
+        "zipcode": 28073,
+        "npl_status": "",
+        "lon": -81.5288902,
+        "lat": 35.2240559,
+        "address": "HWY 198",
+        "income":47500
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402705,
+    "fields": {
+        "tract": 37047930700,
+        "formatted_address": "",
+        "city": "CHADBOURN",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": 0,
+        "lat": 0,
+        "address": "HWY 400",
+        "income":34848
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402716,
+    "fields": {
+        "tract": 37081015402,
+        "formatted_address": "4801 Richardson Village Way, Greensboro, NC 27405, USA",
+        "city": "GREENSBORO",
+        "state": "NC",
+        "zipcode": 27405,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": -79.6885755,
+        "lat": 36.0912601,
+        "address": "4801 RICHARDSON VILLAGE WAY",
+        "income":49570
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402718,
+    "fields": {
+        "tract": 37133002202,
+        "formatted_address": "2127 Lejeune Blvd, Jacksonville, NC 28546, USA",
+        "city": "JACKSONVILLE",
+        "state": "NC",
+        "zipcode": 28546,
+        "npl_status": "",
+        "lon": -77.3664928,
+        "lat": 34.7412369,
+        "address": "2127 LE JEUNE BLVD.",
+        "income":48708
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402720,
+    "fields": {
+        "tract": 37047930100,
+        "formatted_address": "State Rd 1878, Ransom, NC, USA",
+        "city": "RIEGELWOOD",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "",
+        "lon": -78.2094946,
+        "lat": 34.3286532,
+        "address": "STATE RD. 1878",
+        "income":34663
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402724,
+    "fields": {
+        "tract": 37197050501,
+        "formatted_address": "5016 US-601, Yadkinville, NC 27055, USA",
+        "city": "YADKINVILLE",
+        "state": "NC",
+        "zipcode": 27055,
+        "npl_status": "",
+        "lon": -80.675497,
+        "lat": 36.1579389,
+        "address": "5016 U.S. HIGHWAY 601",
+        "income":0
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402728,
+    "fields": {
+        "tract": 37061090801,
+        "formatted_address": "US-117, Goldsboro, NC, USA",
+        "city": "GOLDSBORO",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "",
+        "lon": -78.0129174,
+        "lat": 35.3777403,
+        "address": "HWY 117 SOUTH",
+        "income":43144
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402753,
+    "fields": {
+        "tract": 37025042502,
+        "formatted_address": "440 US-29, Concord, NC 28027, USA",
+        "city": "CONCORD",
+        "state": "NC",
+        "zipcode": 28027,
+        "npl_status": "",
+        "lon": -80.6103949,
+        "lat": 35.4084081,
+        "address": "440 HWY 29 NORTH",
+        "income":60811
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402755,
+    "fields": {
+        "tract": 37071031301,
+        "formatted_address": "1602 N Main St, Lowell, NC 28098, USA",
+        "city": "LOWELL",
+        "state": "NC",
+        "zipcode": 28098,
+        "npl_status": "Other Cleanup Activity: State-Lead Cleanup",
+        "lon": -81.10449,
+        "lat": 35.2857569,
+        "address": "1602 NORTH MAIN STREET",
+        "income":42786
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402763,
+    "fields": {
+        "tract": 37013930200,
+        "formatted_address": "264 Flanders Filter Rd, Washington, NC 27889, USA",
+        "city": "WASHINGTON",
+        "state": "NC",
+        "zipcode": 27889,
+        "npl_status": "Remedial Activities Under EPA Enforcement",
+        "lon": -77.1077678,
+        "lat": 35.5915765,
+        "address": "264 Flanders Filter Rd",
+        "income":48594
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402775,
+    "fields": {
+        "tract": 37155961500,
+        "formatted_address": "NC-211, Aberdeen, NC, USA",
+        "city": "ABERDEEN",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "HRS Start Needed",
+        "lon": -79.4297323,
+        "lat": 35.1315509,
+        "address": "HWY 211 E",
+        "income":40479
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402792,
+    "fields": {
+        "tract": 0,
+        "formatted_address": "334 Main St, Navassa, NC 28451, USA",
+        "city": "NAVASSA",
+        "state": "NC",
+        "zipcode": 28451,
+        "npl_status": "Referred to Removal - NFRAP",
+        "lon": -78.0086112,
+        "lat": 34.2555943,
+        "address": "NAVASSA RD/HWY 74",
+        "income":0
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402802,
+    "fields": {
+        "tract": 37037020600,
+        "formatted_address": "State Rd 2139, Gulf, NC, USA",
+        "city": "GULF",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "",
+        "lon": -79.2774249,
+        "lat": 35.5572584,
+        "address": "2139 ST RD",
+        "income":27900
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402812,
+    "fields": {
+        "tract": 37035011102,
+        "formatted_address": "1508 S Center St, Hickory, NC 28602, USA",
+        "city": "HICKORY",
+        "state": "NC",
+        "zipcode": 28602,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": -81.339682,
+        "lat": 35.708843,
+        "address": "1508 S CENTER ST",
+        "income":50346
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402813,
+    "fields": {
+        "tract": 0,
+        "formatted_address": "US-64, United States",
+        "city": "SPRING HOPE",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "Formal State Deferral",
+        "lon": -92.5664305,
+        "lat": 35.1524783,
+        "address": "HWY 64 & CO RTE 1306",
+        "income":0
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402821,
+    "fields": {
+        "tract": 37129011000,
+        "formatted_address": "Greenfield St, Wilmington, NC 28401, USA",
+        "city": "WILMINGTON",
+        "state": "NC",
+        "zipcode": 28401,
+        "npl_status": "Formal State Deferral",
+        "lon": -77.9377805,
+        "lat": 34.217108,
+        "address": "GREENFIELD STREET",
+        "income":77725
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402833,
+    "fields": {
+        "tract": 37021001900,
+        "formatted_address": "Swannanoa River Rd, Asheville, NC, USA",
+        "city": "ASHEVILLE",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": -82.5182526,
+        "lat": 35.5787659,
+        "address": "SWANNANOA RIVER RD",
+        "income":31463
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402844,
+    "fields": {
+        "tract": 37091950200,
+        "formatted_address": "NC-45, Winton, NC, USA",
+        "city": "WINTON",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "Other Cleanup Activity: State-Lead Cleanup",
+        "lon": -76.9401423,
+        "lat": 36.3853554,
+        "address": "N OF RTE 45 ON CHOWAN RIV",
+        "income":38686
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402893,
+    "fields": {
+        "tract": 37089931400,
+        "formatted_address": "Spartanburg Hwy, East Flat Rock, NC, USA",
+        "city": "EAST FLAT ROCK",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "",
+        "lon": -82.422974,
+        "lat": 35.282424,
+        "address": "SPARTANBURG HWY",
+        "income":53373
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402894,
+    "fields": {
+        "tract": 37027030600,
+        "formatted_address": "3194 Hickory Blvd, Hudson, NC 28638, USA",
+        "city": "HUDSON",
+        "state": "NC",
+        "zipcode": 28638,
+        "npl_status": "Removal Only Site (No Site Assessment Work Needed)",
+        "lon": -81.4677508,
+        "lat": 35.8415911,
+        "address": "3194 HICKORY BLVD",
+        "income":32822
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402932,
+    "fields": {
+        "tract": 37027030600,
+        "formatted_address": "Mt Herman Rd, Lenoir, NC 28638, USA",
+        "city": "LENOIR",
+        "state": "NC",
+        "zipcode": 28638,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": -81.482693,
+        "lat": 35.8632758,
+        "address": "MT HERMON RD",
+        "income":32822
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402933,
+    "fields": {
+        "tract": 37053110302,
+        "formatted_address": "1164 US-17, Elizabeth City, NC 27909, USA",
+        "city": "ELIZABETH CITY",
+        "state": "NC",
+        "zipcode": 27909,
+        "npl_status": "Remedial Activities Under EPA Enforcement",
+        "lon": -76.2775275,
+        "lat": 36.282103,
+        "address": "OFF NC HWY 168",
+        "income":40972
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402957,
+    "fields": {
+        "tract": 37021003001,
+        "formatted_address": "Old Bee Tree Rd, Swannanoa, NC 28778, USA",
+        "city": "SWANNANOA",
+        "state": "NC",
+        "zipcode": 28778,
+        "npl_status": "",
+        "lon": -82.42589,
+        "lat": 35.6308768,
+        "address": "OLD BEE TREE RD",
+        "income":38453
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402961,
+    "fields": {
+        "tract": 37081016011,
+        "formatted_address": "US-421, United States",
+        "city": "GREENSBORO",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": -83.3733824,
+        "lat": 37.1622167,
+        "address": "HWY 421 & CHIMNEY ROCK RD",
+        "income":80521
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 402998,
+    "fields": {
+        "tract": 37063000200,
+        "formatted_address": "750 E Markham Ave, Durham, NC 27701, USA",
+        "city": "DURHAM",
+        "state": "NC",
+        "zipcode": 27701,
+        "npl_status": "HRS Ongoing",
+        "lon": -78.8817026,
+        "lat": 36.0083289,
+        "address": "750 E MARKHAM AVE",
+        "income":19948
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 404225,
+    "fields": {
+        "tract": 37097060400,
+        "formatted_address": "1620 W Front St, Statesville, NC 28677, USA",
+        "city": "STATESVILLE",
+        "state": "NC",
+        "zipcode": 28677,
+        "npl_status": "",
+        "lon": -80.9167989,
+        "lat": 35.7869514,
+        "address": "1620 W. FRONT ST.",
+        "income":53509
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 404327,
+    "fields": {
+        "tract": 37077970300,
+        "formatted_address": "E Industry Dr, Oxford, NC 27565, USA",
+        "city": "OXFORD",
+        "state": "NC",
+        "zipcode": 27565,
+        "npl_status": "",
+        "lon": -78.5841103,
+        "lat": 36.2983772,
+        "address": "INDUSTRY DRIVE",
+        "income":24075
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 405443,
+    "fields": {
+        "tract": 37021002703,
+        "formatted_address": "1 Balcrank Way, Weaverville, NC 28787, USA",
+        "city": "WEAVERVILLE",
+        "state": "NC",
+        "zipcode": 28787,
+        "npl_status": "Other Cleanup Activity: State-Lead Cleanup",
+        "lon": -82.560632,
+        "lat": 35.687365,
+        "address": "1 BALCRANK WAY",
+        "income":50324
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 406402,
+    "fields": {
+        "tract": 37119005824,
+        "formatted_address": "413 N Polk St, Pineville, NC 28134, USA",
+        "city": "PINEVILLE",
+        "state": "NC",
+        "zipcode": 28134,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": -80.8874997,
+        "lat": 35.0897008,
+        "address": "413 NORTH POLK ST.",
+        "income":116875
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 406611,
+    "fields": {
+        "tract": 37097061205,
+        "formatted_address": "1268 Eufola Rd, Statesville, NC 28677, USA",
+        "city": "STATESVILLE",
+        "state": "NC",
+        "zipcode": 28677,
+        "npl_status": "",
+        "lon": -80.9683307,
+        "lat": 35.7202325,
+        "address": "1268 EUFOLA ROAD",
+        "income":45889
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 406759,
+    "fields": {
+        "tract": 37145920200,
+        "formatted_address": "1983 Perkins Dr, Roxboro, NC 27574, USA",
+        "city": "ROXBORO",
+        "state": "NC",
+        "zipcode": 27574,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": -78.972212,
+        "lat": 36.439513,
+        "address": "1983 PERKINS DRIVE",
+        "income":35659
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 406895,
+    "fields": {
+        "tract": 37021002203,
+        "formatted_address": "171 Glenn Bridge Rd, Arden, NC 28704, USA",
+        "city": "ARDEN",
+        "state": "NC",
+        "zipcode": 28704,
+        "npl_status": "",
+        "lon": -82.528525,
+        "lat": 35.46225,
+        "address": "171 GLENN BRIDGE ROAD",
+        "income":62974
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 407421,
+    "fields": {
+        "tract": 37119001300,
+        "formatted_address": "920 Eastway Dr, Charlotte, NC 28205, USA",
+        "city": "CHARLOTTE",
+        "state": "NC",
+        "zipcode": 28205,
+        "npl_status": "Removal Only Site (No Site Assessment Work Needed)",
+        "lon": -80.781929,
+        "lat": 35.243777,
+        "address": "920 EASTWAY DRIVE",
+        "income":28683
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 409783,
+    "fields": {
+        "tract": 37105030200,
+        "formatted_address": "202 Maple Ave, Sanford, NC 27330, USA",
+        "city": "SANFORD",
+        "state": "NC",
+        "zipcode": 27330,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": -79.172951,
+        "lat": 35.479117,
+        "address": "202 MAPLE AVE",
+        "income":46330
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 410255,
+    "fields": {
+        "tract": 37183052101,
+        "formatted_address": "2310 Garner Station Blvd, Raleigh, NC 27603, USA",
+        "city": "RALEIGH",
+        "state": "NC",
+        "zipcode": 27603,
+        "npl_status": "NFRAP-Site does not qualify for the NPL based on existing information",
+        "lon": -78.6626119,
+        "lat": 35.7232957,
+        "address": "2310 OLD GARNER ROAD",
+        "income":84717
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 410317,
+    "fields": {
+        "tract": 0,
+        "formatted_address": "",
+        "city": "SPRUCE PINE",
+        "state": "NC",
+        "zipcode": 0,
+        "npl_status": "Removal Only Site (No Site Assessment Work Needed)",
+        "lon": 0,
+        "lat": 0,
+        "address": "7638 BAKERSVILLE ROAD",
+        "income":0
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 410379,
+    "fields": {
+        "tract": 37081012601,
+        "formatted_address": "3921 Spring Garden St, Greensboro, NC 27407, USA",
+        "city": "GREENSBORO",
+        "state": "NC",
+        "zipcode": 27407,
+        "npl_status": "Removal Only Site (No Site Assessment Work Needed)",
+        "lon": -79.865458,
+        "lat": 36.063975,
+        "address": "3921 SPRING GARDEN STREET",
+        "income":46053
+    }
+  },
+  {
+    "model": "viz.sitelocation",
+    "pk": 410955,
+    "fields": {
+        "tract": 37063001400,
+        "formatted_address": "2000 E Pettigrew St, Durham, NC 27703, USA",
+        "city": "DURHAM",
+        "state": "NC",
+        "zipcode": 27703,
+        "npl_status": "Removal Only Site (No Site Assessment Work Needed)",
+        "lon": -78.8803691,
+        "lat": 35.97923,
+        "address": "2000 EAST PETTIGREW STRETT",
+        "income":41465
+ }  
+   }
+]

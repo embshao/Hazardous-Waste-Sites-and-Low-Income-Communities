@@ -1,0 +1,16 @@
+[
+{
+  "model": "viz.sitelocation",
+  "pk": 1,
+  "fields": {
+    "tract": 37001020100,
+    "address": "104 Louisiana Avenue",
+    "city": "Asheville",
+    "state": "NC",
+    "zipcide": 28806,
+    "npl_status": "Not on NPL list",
+    "lon": "381.999999",
+    "lat": "781.000000"
+  }
+}
+]
