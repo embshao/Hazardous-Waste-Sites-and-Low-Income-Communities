@@ -23,14 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%on4mf(vpk1zke%)^&@o3#dl#*o5i&cb#uujbuygb__2e03o*f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '.embarnardshao.com',
     '.mejo583.embarnardshao.com',
+    '127.0.0.1',
 ]
-
-CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -129,20 +128,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+STATIC_ROOT = ''
+
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder'
-)
+STATICFILES_DIRS = ( os.path.join(BASE_DIR, "static"), )
 
-STATICFILES_FINDERS = [
+STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    # 'django.contrib.staticfiles.finders.DefaultStorageFinder',
+#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
     'djangobower.finders.BowerFinder',
-]
+)
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

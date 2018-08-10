@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      
+      <title>Superfund Sites and Low-Income Communities</title>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- bulma css-->
+      <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!-- D3.js CDN source -->
+      <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+      <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+      <script src="https://d3js.org/topojson.v2.min.js"></script>
+
+      <!-- zoom -->
+      <script src="https://d3js.org/d3-color.v1.min.js"></script>
+      <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+      <script src="https://d3js.org/d3-ease.v1.min.js"></script>
+      <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+      <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+      <script src="https://d3js.org/d3-timer.v1.min.js"></script>
+      <script src="https://d3js.org/d3-transition.v1.min.js"></script>
+      <script src="https://d3js.org/d3-drag.v1.min.js"></script>
+      <script src="https://d3js.org/d3-zoom.v1.min.js"></script>
+      <!-- Add additional CSS in static file -->
+      <link rel="stylesheet" href='style.css'>
+   </head>
+   <body>
+      <div class="pos-f-t">
+         <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+               <h4 class="text-white"><a href="http://www.mejo583.embarnardshao.com/viz/">Home</a></h4>
+               <h4 class="text-white"><a href="http://www.mejo583.embarnardshao.com/viz/tracts/">Census Tracts</a></h4>
+               <h4 class="text-white"><a href="http://www.mejo583.embarnardshao.com/viz/sites/">Superfund Sites</a></h4>
+            </div>
+         </div>
+         <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <h1 id="mainTitle">Spatial Relationship between Hazardous Waste Sites and Low-Income Communities</h1>
+         </nav>
+      </div>
+
+      <div id="content">
+        <div id="vizBtn" class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary"><a href="">Choropleth</a></button>
+        <button type="button" class="btn btn-secondary"><a href="http://www.mejo583.embarnardshao.com/viz/">Map</a></button>
+        <button type="button" class="btn btn-secondary"><a href="http://www.mejo583.embarnardshao.com/viz/pie/">Pie Chart</a></button>
+        <button type="button" class="btn btn-secondary"><a href="http://www.mejo583.embarnardshao.com/viz/bar/">Bar Graph</a></button>
+        </div>
+        <div id="ch">
+          <svg class="income" width="520" height="600" x="50" y="50"></svg>
+          
+            <p style="font-weight: bold; font-size: 18px;">Income Density in North Carolina Census Tracts</p>
+            <p style="font-style: italic; font-size: 12px;">Hover over tracts and zoom in to see average household income</p>
+        </div>
+         <script type="text/javascript" src="nc.js"></script>
+      </div>
+
+
+   </body>
+
+</html>
+

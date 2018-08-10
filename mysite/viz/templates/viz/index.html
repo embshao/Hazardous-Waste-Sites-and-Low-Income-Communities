@@ -20,8 +20,16 @@
       {% endblock %}
    </head>
    <body>
-    <style type="text/css">
-  #map {
+    <style>
+      svg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#ch{
+  margin-top: -200px;
+}
+#map {
         height: 400px;
         width: 100%;
        }
@@ -54,7 +62,7 @@
 
   #vizBtn{
     margin-top: 50px;
-    margin-left: 280px;
+    margin-left: 200px;
   }
 
   #siteCard{
@@ -89,7 +97,7 @@
     margin-top: 1em;
     border: 1px solid #eee;
 }
-</style>
+    </style>
       <div class="pos-f-t">
          <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark p-4">
@@ -109,6 +117,7 @@
       <div id="content">
       {% block nav %}
         <div id="vizBtn" class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary"><a href="http://embarnardshao.com/v/">Choropleth</a></button>
         <button type="button" class="btn btn-secondary"><a href="{% url 'viz:index' %}">Map</a></button>
         <button type="button" class="btn btn-secondary"><a href="{% url 'viz:pie' %}">Pie Chart</a></button>
         <button type="button" class="btn btn-secondary"><a href="{% url 'viz:bar' %}">Bar Graph</a></button>
@@ -154,7 +163,9 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXkZVr8V7-B8Kg3uEvHoYrLPhv6VfXAig&callback=initMap">
     </script>
-
+  </br>
+        <p style="text-align: center; font-weight: bold; font-size: 16px;">Location of Superfund Sites in North Carolina</p>
+        <p style="text-align: center; font-size: 12px; font-style: italic;;">Click on markers to view site information</p>
         {% endblock %}
       </div>
 
